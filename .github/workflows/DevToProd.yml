@@ -1,0 +1,16 @@
+name: Move DevBranch code to ProdBranch repository
+jobs:
+  copy-folder:
+    steps:
+
+    - name: Pushed file from Dev to Prod
+      uses: narenderSmartData/DevBranch@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      with:
+        source_directory: 'Code'
+        destination_repo: 'narenderSmartData/ProdBranch'
+        destination_folder: 'Code'
+        user_email: 'narender.ramadheni@smartdataglobal.in'
+        user_name: 'narenderSmartData'
+        commit_message: 'Moved from DevBranch to ProdBranch'
