@@ -20,8 +20,6 @@ jobs:
       - name: clone the DEV repo
         run:
           git clone --bare https://github.com/narenderSmartData/DevBranch.git
-          cd DevBranch.git
-          git push --mirro https://github.com/narenderSmartData/ProdBranch.git 
       - name: cd to DEV repo
         run:
           cd DevBranch.git
