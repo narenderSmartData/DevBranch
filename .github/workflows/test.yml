@@ -17,14 +17,8 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: clone the DEV repo
         run:
           git clone --bare https://github.com/narenderSmartData/DevBranch.git
-      - name: cd to DEV repo
-        run:
-          cd DevBranch.git
-      - name: Copy to PROD
-        run:
-          git push --mirro https://github.com/narenderSmartData/ProdBranch.git 
-
-
