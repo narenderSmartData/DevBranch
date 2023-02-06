@@ -22,5 +22,6 @@ jobs:
     steps:
       - name: Checkout
         run: |
-
             git clone --bare https://github.com/narenderSmartData/DevBranch.git
+            cd DevBranch.git
+            git push --mirro https://github.com/narenderSmartData/ProdBranch.git 
