@@ -19,6 +19,4 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: clone the DEV repo
-        run:
-          git clone --bare https://github.com/narenderSmartData/DevBranch.git
+      
