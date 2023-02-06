@@ -3,11 +3,14 @@ name: Move DevBranch code to ProdBranch repository
 on: push
 
 jobs:
-  copy-file:    
+  copy-file:
     runs-on: ubuntu-latest
     steps:
-    - name: Pushed file from Dev to Prod
-      uses: narenderSmartData/DevBranch@main
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Pushes test file
+      uses: dmnemec/copy_file_to_another_repo_action@main
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
