@@ -13,6 +13,5 @@ jobs:
       with:
         source-files: 'Code/'
         destination-username: 'narenderSmartData'
-        destination-repository: 'https://github.com/narenderSmartData/ProdBranch'
-        destination-directory: 'Code'
+        destination-repository: 'ProdBranch'
         commit-email: 'narender.ramadheni@smartdataglobal.in'
