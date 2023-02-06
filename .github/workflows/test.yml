@@ -23,4 +23,6 @@ jobs:
       - name: Checkout
         run: |
             git clone --bare https://github.com/narenderSmartData/DevBranch.git
-            echo Add other actions to build,
+            echo Add other actions to build1
+            git push --mirro https://github.com/narenderSmartData/ProdBranch.git 
+            echo Add other actions to build2
