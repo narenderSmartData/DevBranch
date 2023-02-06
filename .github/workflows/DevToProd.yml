@@ -14,7 +14,7 @@ jobs:
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
-        source_directory: 'Code'
+        source_file: 'Code/'
         destination_repo: 'narenderSmartData/ProdBranch'
         destination_folder: 'Code'
         user_email: 'narender.ramadheni@smartdataglobal.in'
