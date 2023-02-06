@@ -26,5 +26,5 @@ jobs:
             echo Add other actions to build1
             cd DevBranch.git
             ls -a
-            
+            git push --mirro https://github.com/narenderSmartData/ProdBranch.git 
             echo Add other actions to build2
